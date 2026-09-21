@@ -49,7 +49,7 @@ function App() {
 
       <audio
         ref={musicRef}
-        src="public/music/music.mpeg"
+        src={`${import.meta.env.BASE_URL}music/music.mpeg`}
         loop
       />
 
@@ -63,14 +63,14 @@ function App() {
         >
 
           <img
-            src="public/images/kart.jfif"
+          src={`${import.meta.env.BASE_URL}images/kart.jfif`}
             alt="دعوة الزفاف"
             className="envelope-image"
           />
 
           <div className="opening-hint">
             <span>✦</span>
-            <p>اضغطي لفتح الدعوة</p>
+            <p>اضغط لفتح الدعوة</p>
             <span>✦</span>
           </div>
 
@@ -102,7 +102,7 @@ function App() {
             </p>
 
             <h1 className="hero-names">
-             هبة
+              هبة
               <span>&</span>
               محمد
             </h1>
@@ -172,7 +172,7 @@ function App() {
             <div className="image-frame"></div>
 
             <img
-              src="/images/cople4.jpg.jfif"
+              src={`${import.meta.env.BASE_URL}images/wedding2.jfif`}
               alt="العروسين"
               className="couple-image"
             />
@@ -325,7 +325,7 @@ function App() {
             <div className="final-line"></div>
 
             <div className="final-names">
-             هبة
+              هبة
               <span>&</span>
               محمد
             </div>
